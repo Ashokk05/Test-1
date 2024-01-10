@@ -145,8 +145,8 @@
 				]
 			},
 			{
-				"name": "Copy data1",
-				"type": "Copy",
+				"name": "Delete",
+				"type": "Delete",
 				"dependsOn": [
 					{
 						"activity": "Ingress to curated",
@@ -164,7 +164,25 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
+					"dataset": {
+						"referenceName": "ds_generic",
+						"type": "DatasetReference",
+						"parameters": {
+							"container": {
+								"value": "@pipeline().globalParameters.container",
+								"type": "Expression"
+							},
+							"folder": "/",
+							"filename": "/"
+						}
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"wildcardFileName": "*",
+						"enablePartitionDiscovery": false
+					}
 				}
 			}
 		],
