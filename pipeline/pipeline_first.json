@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "Copy files from raw_data to data",
-				"description": "copyping the data from one to another",
+				"description": "copying the data from one to another",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
