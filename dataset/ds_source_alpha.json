@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "ds_source_alpha",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "alpha_Source",
