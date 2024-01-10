@@ -173,14 +173,13 @@
 								"type": "Expression"
 							},
 							"folder": "/",
-							"filename": "/"
+							"filename": "circuits.csv"
 						}
 					},
 					"enableLogging": false,
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"recursive": true,
-						"wildcardFileName": "*",
 						"enablePartitionDiscovery": false
 					}
 				}
