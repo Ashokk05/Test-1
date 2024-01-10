@@ -3,7 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy files from raw_data to data",
+				"description": "copyping the data from one to another",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -49,13 +50,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "ds_source_alpha",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "destination_alpha",
+						"referenceName": "ds_sink_alpha",
 						"type": "DatasetReference"
 					}
 				]
