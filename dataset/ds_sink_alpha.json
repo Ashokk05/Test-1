@@ -1,5 +1,5 @@
 {
-	"name": "destination_alpha",
+	"name": "ds_sink_alpha",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "alpha_Source",
