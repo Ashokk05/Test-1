@@ -1,0 +1,12 @@
+{
+	"name": "ADFsessionn",
+	"properties": {
+		"globalParameters": {
+			"container": {
+				"type": "string",
+				"value": "data"
+			}
+		}
+	},
+	"location": "uksouth"
+}
