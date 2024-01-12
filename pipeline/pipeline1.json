@@ -90,7 +90,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"pythonFile": "dbfs:/mnt/artifacts/DataIngestionCircuits.py"
+					"pythonFile": "dbfs:/mnt/artifacts/DataIngestionCircuits.py",
+					"parameters": []
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricksLS",
