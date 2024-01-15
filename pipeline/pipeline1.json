@@ -52,8 +52,8 @@
 						"referenceName": "DelimitedText1",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": "artifacts",
-							"directory": "/",
+							"container": "data",
+							"directory": "ingress",
 							"filename": "circuits.csv"
 						}
 					}
@@ -64,7 +64,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "data",
-							"directory": "Ingress",
+							"directory": "cleansed",
 							"filename": "circuitscopied.csv"
 						}
 					}
@@ -94,16 +94,15 @@
 						"referenceName": "DelimitedText1",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": "artifacts",
-							"directory": "/",
-							"filename": "/"
+							"container": "data",
+							"directory": "ingress",
+							"filename": "circuits.csv"
 						}
 					},
 					"enableLogging": false,
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"recursive": true,
-						"wildcardFileName": "*",
 						"enablePartitionDiscovery": false
 					}
 				}
