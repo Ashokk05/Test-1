@@ -71,16 +71,9 @@
 				]
 			},
 			{
-				"name": "Python1",
-				"type": "DatabricksSparkPython",
-				"dependsOn": [
-					{
-						"activity": "Copy data1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"name": "Delete1",
+				"type": "Delete",
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -90,11 +83,22 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"pythonFile": "dbfs:/mnt/artifacts/DataIngestionCircuits.py"
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureDatabricksLS",
-					"type": "LinkedServiceReference"
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "artifacts",
+							"directory": "/",
+							"filename": "/"
+						}
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"wildcardFileName": "*",
+						"enablePartitionDiscovery": false
+					}
 				}
 			}
 		],
