@@ -53,7 +53,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "data",
-							"directory": "ingress",
+							"directory": "Ingress",
 							"filename": "circuits.csv"
 						}
 					}
@@ -95,7 +95,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "data",
-							"directory": "ingress",
+							"directory": "Ingress",
 							"filename": "circuits.csv"
 						}
 					},
@@ -188,7 +188,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "data",
-										"directory": "ingress",
+										"directory": "Ingress",
 										"filename": "circuits.csv"
 									}
 								}
