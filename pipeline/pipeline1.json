@@ -61,7 +61,7 @@
 						"parameters": {
 							"container": "data",
 							"directory": {
-								"value": "@activity('Lookup1').output.firstRow.RowKey",
+								"value": "@activity('Lookup1').output.values.RowKey",
 								"type": "Expression"
 							},
 							"filename": "circuits.csv"
