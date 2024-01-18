@@ -233,7 +233,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureTableSource",
-						"azureTableSourceQuery": "PartitionKey eq 'Nissan'",
+						"azureTableSourceQuery": "PartitionKey eq 'NIssan'",
 						"azureTableSourceIgnoreTableNotFound": false
 					},
 					"dataset": {
