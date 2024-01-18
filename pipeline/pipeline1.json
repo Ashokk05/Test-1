@@ -60,10 +60,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "data",
-							"directory": {
-								"value": "@activity('Lookup1').output.value[0].Filename",
-								"type": "Expression"
-							},
+							"directory": "Ingess",
 							"filename": "circuits.csv"
 						}
 					}
